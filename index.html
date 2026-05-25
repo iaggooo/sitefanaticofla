@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manto Notícias | Curiosidades do Flamengo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1 class="logo"><i class="fa-solid fa-shield-halved"></i> Manto<span>Notícias</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#noticias">Notícias</a></li>
+                    <li><a href="#curiosidades">Curiosidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Uma Nação de História e Paixão</h2>
+            <p>Fique por dentro das últimas notícias e fatos históricos do Clube de Regatas do Flamengo.</p>
+            <a href="#noticias" class="btn-hero">Explorar Portal</a>
+        </div>
+    </section>
+
+    <main class="main-container">
+        
+        <section id="noticias" class="news-section">
+            <h2 class="section-title">Últimas Notícias</h2>
+            <div class="news-grid">
+                
+                <article class="news-card">
+                    <div class="card-img placeholder-1"></div>
+                    <div class="card-body">
+                        <span class="tag">Futebol</span>
+                        <h3>Preparação no Ninho do Urubu</h3>
+                        <p>O elenco principal realizou treinos táticos focados no próximo confronto decisivo da temporada no Maracanã.</p>
+                        <div class="card-footer">
+                            <button class="btn-like"><i class="fa-regular fa-heart"></i> <span class="like-count">0</span></button>
+                            <span class="date">Hoje</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="card-img placeholder-2"></div>
+                    <div class="card-body">
+                        <span class="tag">Orgulho Da Nação</span>
+                        <h3>Basquete foca nos Playoffs</h3>
+                        <p>O time de basquete do Flamengo intensifica a preparação física para buscar mais um título nacional.</p>
+                        <div class="card-footer">
+                            <button class="btn-like"><i class="fa-regular fa-heart"></i> <span class="like-count">0</span></button>
+                            <span class="date">Ontem</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <aside id="curiosidades" class="sidebar-section">
+            <h2 class="section-title">Você Sabia?</h2>
+            <div class="curiosity-box">
+                <ul class="curiosity-list">
+                    <li onclick="abrirModal(1)">
+                        <i class="fa-solid fa-star text-gold"></i>
+                        <span>A Origem do Urubu como mascote oficial.</span>
+                    </li>
+                    <li onclick="abrirModal(2)">
+                        <i class="fa-solid fa-star text-gold"></i>
+                        <span>O ano de fundação e o foco inicial do clube.</span>
+                    </li>
+                    <li onclick="abrirModal(3)">
+                        <i class="fa-solid fa-star text-gold"></i>
+                        <span>O primeiro uniforme (Papagaio de Vintém).</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+    </main>
+
+    <div id="modalCuriosidade" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="fecharModal()">&times;</span>
+            <h3 id="modal-titulo">Título da Curiosidade</h3>
+            <p id="modal-texto">Texto detalhado aqui...</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Manto Notícias. Desenvolvido para a Maior Nação do Mundo.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
